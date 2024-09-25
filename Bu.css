@@ -1,0 +1,9 @@
+body{
+    background-color: coral;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
