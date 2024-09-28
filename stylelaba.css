@@ -60,13 +60,14 @@ body{
 .dio{
     width: 170px;
     float: left;
-    shape-outside: polygon(69% 0, 66% 11%, 86% 8%, 99% 21%, 100% 38%, 76% 44%, 71% 52%, 70% 59%, 79% 65%, 77% 74%, 75% 80%, 77% 86%, 73% 89%, 76% 94%, 81% 100%, 22% 100%, 16% 0);
+    shape-outside: url(./Dio.png);
 }
 
 .container{
-    width: 800px;
+    width: 50%;
     margin-top: -300px;
     margin-left: 290px;
+
 }
 
 .josuke{
