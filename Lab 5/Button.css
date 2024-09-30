@@ -1,0 +1,17 @@
+.coralbutton{
+    background-color: coral;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    font-size: 15px;
+}
+
+.lightcoralbutton{
+    background-color: #f3a685;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    font-size: 15px;
+}
