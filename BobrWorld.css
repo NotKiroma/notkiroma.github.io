@@ -141,3 +141,25 @@ body{
     color: white;
 }
 
+.minecraft{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(54, 54, 54);
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.kotimg{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    color: white;
+
+}
+
+#kot{
+    border-radius: 20px;
+    float: left;
+}
+

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba0e1d96-bd21-4129-beb5-cafeae7903a7" name="Changes" comment="a" />
+    <list default="true" id="ba0e1d96-bd21-4129-beb5-cafeae7903a7" name="Changes" comment="a">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BobrWorld.css" beforeDir="false" afterPath="$PROJECT_DIR$/BobrWorld.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BobrWorld.html" beforeDir="false" afterPath="$PROJECT_DIR$/BobrWorld.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BobrWorld.js" beforeDir="false" afterPath="$PROJECT_DIR$/BobrWorld.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +69,11 @@
       <workItem from="1727546047645" duration="18000" />
       <workItem from="1727552117390" duration="323000" />
       <workItem from="1727554985077" duration="12000" />
+      <workItem from="1727626900603" duration="24000" />
+      <workItem from="1727683239792" duration="602000" />
+      <workItem from="1727684634148" duration="41000" />
+      <workItem from="1727685116646" duration="214000" />
+      <workItem from="1727689982589" duration="1535000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
