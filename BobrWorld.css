@@ -168,3 +168,31 @@ body{
     margin-top: -40px;
 }
 
+.reg{
+    background-color: rgb(54, 54, 54);
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    margin: 30px;
+    margin-top: 200px;
+}
+
+.regprice{
+    background-color: rgb(54, 54, 54);
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    margin: 30px;
+    margin-top: 200px;
+}
+
+.regpricebutton{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 13px;
+}
+
+.regbody{
+    justify-content: center;
+    display: flex;
+}
