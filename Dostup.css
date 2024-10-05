@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(44, 42, 42);
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.rub{
+    background-color: #292828;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px;
+    transition: all 50ms ease-in-out;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.rub.active{
+    color: coral;
+    transform: scale(1.1);
+}
+
+.rub:hover{
+    transform: scale(1.1);
+}
+
+.usd{
+    background-color: #292828;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px;
+    transition: all 50ms ease-in-out;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.usd.active{
+    color: coral;
+    transform: scale(1.1);
+}
+
+.usd:hover{
+    transform: scale(1.1);
+}
+
+.kzt{
+    background-color: #292828;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px;
+    transition: all 50ms ease-in-out;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.kzt.active{
+    color: coral;
+    transform: scale(1.1);
+}
+
+.kzt:hover{
+    transform: scale(1.1);
+}
+
+.regprice{
+    background-color: rgb(54, 54, 54);
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    margin: 30px;
+    margin-top: 200px;
+}
+
+.regpricebutton{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 13px;
+}
+
+.regbody{
+    justify-content: center;
+    display: flex;
+}
+
+.price{
+    text-align: center;
+    color: white;
+    margin-top: 90px;
+}
+
+h3{
+    margin-top: -30px;
+}
+
+#price{
+    color: coral;
+    font-size: 50px;
+}
+
+.buttonbuy{
+    display: flex;
+    justify-content: center;
+    margin-top: 113px;
+}
+
+.buttontwobuy{
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: coral;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.buttontwobuy:hover{
+    background-color: #e66436;
+}

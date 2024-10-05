@@ -1,5 +1,6 @@
 const button = document.getElementById('button');
-const text = document.getElementById('text')
+const text = document.getElementById('text');
+const rub = document.getElementById('rub');
 button.addEventListener('click', function() {
     if(button.className === 'coralbutton') {
         button.className = 'corilbutton';
