@@ -13,5 +13,5 @@ button.addEventListener('click', function() {
 });
 
 document.getElementById('regbutton').addEventListener('click', function () {
-    window.location.href = 'register.html';
+    window.location.href = 'Register.html';
 })
