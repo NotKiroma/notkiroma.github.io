@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рисунки на заказ</title>
+    <style>
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+        .red {
+            background-color: rgb(255, 135, 135);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 15px;
+            transition: all 1s ease;
+        }
+
+        .red:active{
+            transform: scale(0.9);
+        }
+
+        .blue {
+            background-color: rgb(246, 220, 118);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 15px;
+            transition: all 1s ease;
+        }
+        
+        .blue:active{
+            transform: scale(0.9);
+        }
+
+        body {
+            background-image: url(./gradient.jpg);
+            background-size: cover;
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+
+        #obman{
+            text-align: center;
+        }
+
+        .colortext{
+            color: #ff4b00;
+        }
+
+        .colortextdva{
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="jaba.css">
+    <script src="./byaka.js"></script>
+</head>
+<body>
+    <h1>Беру коммишки</h1>
+    <div class="box">
+        <h2 class="centertext">Скетчи (Дидж, традишка)</h2>
+    <ul class="titan">
+        <li>Портрет - 1,000,000,000 тг</li>
+        <li>Пол тела - 4,000,000,000 тг</li>
+        <li>Полный рост - 10,000,000,000 тг</li>
+    </ul>
+        <h3 class="centertext">Фон</h3>
+        <ul class="karez">
+            <li>Простой фон - 100,000 £</li>
+            <li>Средний фон - 300,000 £</li>
+            <li>Сложный фон - 500,000 £</li>
+        </ul>
+    </div>
+
+    <h2>Полноценки с покрасом и рендером</h2>
+<table class="table">
+    <thead class="rishead">
+        <tr>
+            <th>То че надо нарисовать</th>
+            <th>Цена</th>
+            <th>Цена простого фона</th>
+            <th>Цена среднего фона</th>
+            <th>Цена сложного фона</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="risbody">
+            <td>Протрет</td>
+            <td>353,683 $</td>
+            <td>2,000 $</td>
+            <td>4,000 $</td>
+            <td>8,000 $</td>
+        </tr>
+        <tr class="risbody">
+            <td>Пол тела</td>
+            <td>707,366 $</td>
+            <td>10,000 $</td>
+            <td>15,000 $</td>
+            <td>20,000 $</td>
+        </tr>
+        <tr class="risbody">
+            <td>Полный рост</td>
+            <td>1,414,732 $</td>
+            <td>30,000 $</td>
+            <td>35,000 $</td>
+            <td>45,000 $</td>
+        </tr>
+    </tbody>
+</table>
+<div class="kroki">
+    <h3>Не рисую</h3>
+<ol class="emae">
+    <li>Сложную архитектуру</li>
+    <li>Ваши больные фантазии (но тут уже смотря на цену)</li>
+    <li>Сложные пейзажи</li>
+    <li>Пошлятену (сори :( )</li>
+</ol>
+<h3>Рисую</h3>
+<ol class="hot">
+    <li>Людей фурри и прочие рассы</li>
+    <li>Животных разных</li>
+    <li>Роботов прикольных</li>
+    <li>Гуро (кров кишки мясо)</li>
+    <li>Может еще что-то, я хз, потом сами спросите при оформлении заказа</li>
+</ol>
+</div>
+
+<ul class="pipec">
+    <li>Первые 3 правки бесплатно</li>
+    <li>Остальные правки будут уже стоять +500% от стоимости заказа
+        <ul>
+            <li>Доп перс +1000% от заказа</li>
+            <li>Изменение фона будет стоить как фон, на который вы решили изменить
+                <ul>
+                    <li>За косяки деньги не верну :)</li>
+                    <li>Закажите пж рисунок</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<img src="vova" alt="">
+    <p id="obman" class="colortextdva">Точно не обман</p>
+<div class="button">
+    <button id="colorButton" class="red">Отдать все деньги</button>
+</div>
+<script>
+    const button = document.getElementById('colorButton');
+    const obman = document.getElementById('obman');
+    button.addEventListener('click', function() {
+        if (button.className === 'red') {
+            button.className = 'blue';
+            obman.textContent = "Обманули дурака на четыре кулака"
+            obman.className = 'colortext'
+
+        } else {
+            button.className = 'red';
+            obman.textContent = "Отдать все деньги"
+            obman.className = 'colortextdva'
+        }
+    });
+</script>
+</body>
+</html>
