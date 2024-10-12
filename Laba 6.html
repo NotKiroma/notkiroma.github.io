@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laba 6</title>
+    <style>
+        body{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background-color: #424040;
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: #dd7474;
+            border: 2px solid black;
+            padding: 8px;
+        }
+        td {
+
+            background-color: white;
+            border: 2px solid black;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+<table id="table">
+    <thead>
+    <tr>
+        <th>Number</th>
+        <th>Website</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<script>
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+            .then(bu =>{
+                console.log(bu);
+            const table = document.getElementById('table')
+            bu.forEach(bt =>{
+                const row = document.createElement('tr');
+                const id = document.createElement('td');
+                const name = document.createElement('td');
+                const phone = document.createElement('td');
+                const email = document.createElement('td');
+                const web = document.createElement('td');
+
+                web.textContent = bt.website;
+                id.textContent = bt.id;
+                name.textContent = bt.name;
+                phone.textContent = bt.phone;
+                email.textContent = bt.email;
+
+                row.appendChild(id);
+                row.appendChild(web);
+                row.appendChild(name);
+                row.appendChild(phone);
+                row.appendChild(email);
+                table.appendChild(row);
+            });
+        })
+            .catch(error => console.error('Ошибка при получении данных:', error));
+</script>
+</body>
+</html>
