@@ -345,3 +345,9 @@ body{
     text-align: center;
     padding-top: 50px;
 }
+
+@media screen and (max-width: 600px){
+    .home-block h1{
+        color: black;
+    }
+}

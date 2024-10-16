@@ -5,7 +5,6 @@ body{
 
 .top-block{
     padding: 15px 20px;
-    border-radius: 100px;
     margin: 10px auto;
     width:85%;
     height: 55px;
@@ -18,7 +17,7 @@ body{
 }
 
 .top-menu img{
-    margin: auto 0 auto 10px;
+    margin: auto 10px;
     height: 40px;
 }
 
@@ -48,7 +47,7 @@ body{
     margin: auto 10px;
     cursor: pointer;
     background-color: #611f69;
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
     padding: 10px 15px;
     border: none;
@@ -66,7 +65,7 @@ body{
     margin: auto 10px;
     cursor: pointer;
     background-color: white;
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
     padding: 10px 15px;
     color: #611f69;
@@ -82,12 +81,12 @@ body{
 }
 
 .reg-block{
+    align-items: center;
     display: flex;
 }
 
 .reg-block img{
     height: 30px;
-    margin: auto;
 }
 
 .centertext-block{
@@ -163,24 +162,101 @@ body{
     height: 22px;
 }
 
+.icon-block{
+    margin-bottom: 25px;
+}
+
 .icon-block img{
     margin: 10px 40px;
     height: 30px;
 }
 
 .video-block{
-    margin-top: 30px;
+    margin: auto;
     display: flex;
     justify-content: center;
-}
-
-.video-block video{
-    height: 560px;
     border-radius: 5px;
 }
 
-.boba{
-    display: flex;
-    height: 500px;
+.video-block video{
+    border-radius: 5px;
+    width: 1000px;
+}
 
+.three-polos{
+    display: none;
+}
+
+.three-polos img{
+    height: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .top-menu ul{
+        display: none;
+    }
+    .reg-block{
+        display: none;
+    }
+    .three-polos{
+        margin: auto 10px;
+        display: flex;
+    }
+    #search{
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .video-block{
+        width: 800px;
+        height: auto;
+        margin-top: 15px;
+        background-color: #611f69;
+    }
+    .video-block video{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .video-block{
+        width: 600px;
+        height: auto;
+        margin-top: 15px;
+        background-color: #611f69;
+    }
+    .video-block video{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .video-block{
+        width: 400px;
+        height: auto;
+        margin-top: 15px;
+        background-color: #611f69;
+    }
+    .video-block video{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .video-block{
+        width: 200px;
+        height: auto;
+        margin-top: 15px;
+        background-color: #611f69;
+    }
+    .video-block video{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    #but{
+        display: none;
+    }
 }
