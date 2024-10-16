@@ -1,4 +1,5 @@
 body{
+    font-family: "Poppins", sans-serif;
     margin:0;
     padding:0;
 }
@@ -211,6 +212,24 @@ body{
     }
 }
 
+.bottomtext-block{
+    margin: 60px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.bottomtext-block p{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 600;
+    width: 1300px;
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
 @media screen and (max-width: 1040px) {
     .video-block{
         width: 800px;
@@ -220,6 +239,12 @@ body{
     }
     .video-block video{
         width: 800px;
+    }
+    .bottomtext-block{
+        margin-top: 20px;
+    }
+    .bottomtext-block p{
+        font-size: 40px;
     }
 }
 
@@ -233,29 +258,41 @@ body{
     .video-block video{
         width: 600px;
     }
+    .bottomtext-block p{
+        font-size: 30px;
+    }
+    .bottomtext-block{
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .video-block{
-        width: 400px;
+        width: 500px;
         height: auto;
         margin-top: 15px;
         background-color: #611f69;
     }
     .video-block video{
-        width: 400px;
+        width: 500px;
+    }
+    .bottomtext-block p{
+        font-size: 20px;
+    }
+    .bottomtext-block{
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 540px) {
     .video-block{
-        width: 200px;
+        width: 400px;
         height: auto;
         margin-top: 15px;
         background-color: #611f69;
     }
     .video-block video{
-        width: 200px;
+        width: 400px;
     }
 }
 
