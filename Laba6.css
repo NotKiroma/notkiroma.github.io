@@ -191,6 +191,10 @@ body{
     height: 30px;
 }
 
+#search{
+    height: 30px;
+}
+
 @media screen and (max-width: 1200px) {
     .top-menu ul{
         display: none;

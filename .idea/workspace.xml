@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba0e1d96-bd21-4129-beb5-cafeae7903a7" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/Fon.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Im.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Portfolio.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Portfolio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about3.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2024_19_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2024_19_02__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/fSite Ilya/AA.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fSite Ilya/AA.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BobrWorld.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/BobrWorld.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BobrWorld.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/BobrWorld.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bobrworld.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/Bobrworld.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dostup.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/Dostup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dostup.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/Dostup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dostup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/Dostup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oplata.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/Oplata.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oplata.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/Oplata.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/Register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/Register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artworks-000230004923-hwrxxd-t500x500.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/artworks-000230004923-hwrxxd-t500x500.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/kot.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotik.png" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/kotik.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotik2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/kotik2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotik3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Bobr World/kotik3.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +35,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/NotKiroma/notkiroma.github.io.git&quot;,
-    &quot;accountId&quot;: &quot;4b3e0a84-4244-4a17-8760-5aa65bf82fae&quot;
+    &quot;accountId&quot;: &quot;7c61dd64-dfdc-426c-adb1-01f47ba62013&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -78,7 +55,6 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/HTML&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -90,8 +66,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kirom\OneDrive\Documents\GitHub\notkiroma.github.io" />
-      <recent name="C:\Users\kirom\OneDrive\Documents\GitHub\notkiroma.github.io\Bobr World" />
+      <recent name="C:\Users\MiniBobr\Documents\GitHub\notkiroma.github.io" />
+      <recent name="C:\Users\MiniBobr\Documents\GitHub\notkiroma.github.io\Portfolio" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -117,14 +93,11 @@
       <workItem from="1727796079817" duration="42000" />
       <workItem from="1727963482537" duration="4205000" />
       <workItem from="1728125414977" duration="2000" />
-      <workItem from="1728132096775" duration="20000" />
-      <workItem from="1728149188518" duration="6223000" />
-      <workItem from="1728155633057" duration="364000" />
-      <workItem from="1728200983696" duration="3851000" />
-      <workItem from="1728215817739" duration="25000" />
-      <workItem from="1728217297994" duration="83000" />
-      <workItem from="1728228930369" duration="882000" />
-      <workItem from="1728397759465" duration="7901000" />
+      <workItem from="1728900164777" duration="1877000" />
+      <workItem from="1728908999580" duration="7610000" />
+      <workItem from="1728970860420" duration="1068000" />
+      <workItem from="1729076531824" duration="3890000" />
+      <workItem from="1729092276440" duration="2255000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -160,45 +133,53 @@
     </task>
     <task id="LOCAL-00005" summary="a">
       <option name="closed" value="true" />
-      <created>1728155466133</created>
+      <created>1728902022057</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1728155466133</updated>
+      <updated>1728902022057</updated>
     </task>
     <task id="LOCAL-00006" summary="a">
       <option name="closed" value="true" />
-      <created>1728155992808</created>
+      <created>1728970762764</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1728155992808</updated>
+      <updated>1728970762764</updated>
     </task>
     <task id="LOCAL-00007" summary="a">
       <option name="closed" value="true" />
-      <created>1728204091609</created>
+      <created>1728971622307</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1728204091609</updated>
+      <updated>1728971622307</updated>
     </task>
     <task id="LOCAL-00008" summary="a">
       <option name="closed" value="true" />
-      <created>1728204226337</created>
+      <created>1728972157937</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1728204226337</updated>
+      <updated>1728972157937</updated>
     </task>
     <task id="LOCAL-00009" summary="a">
       <option name="closed" value="true" />
-      <created>1728229814705</created>
+      <created>1728972415738</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1728229814705</updated>
+      <updated>1728972415738</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="a">
+      <option name="closed" value="true" />
+      <created>1729094415089</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729094415089</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

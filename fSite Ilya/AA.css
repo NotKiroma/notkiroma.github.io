@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: bisque;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    border: 2px dotted #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid red;
+}
+
+main {
+    background-color: burlywood;
+    text-align: center;
+}
+
+footer {
+    background-color: wheat;
+}
