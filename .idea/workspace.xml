@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba0e1d96-bd21-4129-beb5-cafeae7903a7" name="Changes" comment="a">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba6.css" beforeDir="false" afterPath="$PROJECT_DIR$/Laba6.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Laba6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hp-hero.en-GB@2x (1).webm" beforeDir="false" />
-    </list>
+    <list default="true" id="ba0e1d96-bd21-4129-beb5-cafeae7903a7" name="Changes" comment="a" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728229814705</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="a">
+      <option name="closed" value="true" />
+      <created>1729101139765</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729101139765</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

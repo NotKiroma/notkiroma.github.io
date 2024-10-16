@@ -101,6 +101,7 @@ body{
 }
 
 .centertext-block h1{
+    font-family: "Poppins", sans-serif;
     font-size: 65px;
     margin: auto 10px;
 }
@@ -135,6 +136,7 @@ body{
 }
 
 .centerbottomtext-block h4, p{
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     margin: 13px 3px;
 }
@@ -196,6 +198,25 @@ body{
     display: none;
 }
 
+.bottomtext-block{
+    margin: 60px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.bottomtext-block p{
+    font-family: "Poppins", sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 600;
+    width: 1300px;
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
     .top-menu ul{
         display: none;
@@ -210,24 +231,6 @@ body{
     #search{
         margin-right: 35px;
     }
-}
-
-.bottomtext-block{
-    margin: 60px auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    display: flex;
-}
-
-.bottomtext-block p{
-    padding-left: 30px;
-    padding-right: 30px;
-    font-weight: 600;
-    width: 1300px;
-    display: block;
-    font-size: 50px;
-    text-align: center;
 }
 
 @media screen and (max-width: 1040px) {
