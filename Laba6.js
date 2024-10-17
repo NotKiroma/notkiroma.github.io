@@ -20,3 +20,17 @@ if (window.innerWidth < 540){
     if (window.innerWidth < 540){
         logo.src = 'logowhite.png'
     }
+
+    getbutton.addEventListener('click',function(){
+        getbutton.classList.add('animate__animated', 'animate__bounce');
+        setTimeout(function () {
+            getbutton.classList.remove('animate__animated', 'animate__bounce');
+        }, 1000);
+    })
+
+let anims = [...document.querySelectorAll("[anim]")];
+console.log(anims);
+let click = (el, cb) => el.addEventListener("click", cb);
+let toggle = (el) => el.classList.toggle("toggled");
+let clickTog = (el) => click(el, () => toggle(el));
+anims.map(clickTog);

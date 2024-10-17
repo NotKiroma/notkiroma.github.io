@@ -1,3 +1,5 @@
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
 body{
     font-family: "Poppins", sans-serif;
     margin:0;
@@ -127,6 +129,7 @@ body{
 
 .centerbutton-block button:hover{
     background-color: #4d1953;
+
 }
 
 .centerbottomtext-block{
@@ -148,6 +151,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 
 #airbnb{
     height: 30px;
@@ -196,6 +200,10 @@ body{
 
 #search{
     display: none;
+}
+
+.aaa{
+    background-color: red;
 }
 
 .bottomtext-block{
