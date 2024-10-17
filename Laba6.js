@@ -1,7 +1,7 @@
 const white = document.getElementById('white');
 const yellow = document.getElementById('yellow');
 
-if (window.innerWidth < 540){
+if (window.innerWidth < 777){
     white.textContent = "Made for people."
     yellow.textContent = "Build for productivity."
 }else{
@@ -11,13 +11,13 @@ if (window.innerWidth < 540){
 
     const getbutton = document.getElementById('get-button');
 
-    if (window.innerWidth < 540){
+    if (window.innerWidth < 777){
         getbutton.textContent = "SLACK FOR ANDROID"
     }else{
         getbutton.textContent = "GET STARTED"
     }
     const logo = document.getElementById('logo');
-    if (window.innerWidth < 540){
+    if (window.innerWidth < 777){
         logo.src = 'logowhite.png'
     }
 
@@ -27,10 +27,3 @@ if (window.innerWidth < 540){
             getbutton.classList.remove('animate__animated', 'animate__bounce');
         }, 1000);
     })
-
-let anims = [...document.querySelectorAll("[anim]")];
-console.log(anims);
-let click = (el, cb) => el.addEventListener("click", cb);
-let toggle = (el) => el.classList.toggle("toggled");
-let clickTog = (el) => click(el, () => toggle(el));
-anims.map(clickTog);
