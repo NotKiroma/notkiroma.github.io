@@ -1,0 +1,10 @@
+body, html{
+    margin: 1px;
+}
+
+.grid_box{
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
