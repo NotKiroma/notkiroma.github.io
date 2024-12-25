@@ -1,0 +1,40 @@
+
+p{
+    padding: 20px;
+    position: relative;
+    font-size: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+p:active{
+    transform: scale(1.01);
+}
+
+p:hover{
+    color: coral;
+}
+
+p:hover::before{
+    opacity: 1;
+}
+
+p::before{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#t1::before{
+    background-image: url("https://img2.akspic.ru/crops/0/6/4/7460/7460-kraternoe_ozero-pejzazhi_gor-voda-rassvet-pejzazhi-1920x1080.jpg");
+}
+
+#t2::before{
+    background-image: url("https://images.wallpaperscraft.ru/image/single/gory_ozero_pejzazh_79398_1920x1080.jpg");
+}

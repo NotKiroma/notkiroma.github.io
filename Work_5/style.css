@@ -37,6 +37,7 @@ img{
 }
 
 .flex_row.two{
+
     flex: 2;
 }
 
@@ -46,11 +47,13 @@ img{
 }
 
 .flex_row.two > img{
-    flex: 2;
+    flex-basis: calc(200% / 3 + 10px);
+    /*flex: 2;*/
 }
 
 .flex_row.two .flex_column{
-    flex: 1;
+    flex-basis: calc(100% / 3);
+    /*flex: 1;*/
     display: flex;
     flex-direction: column;
     gap: 10px;

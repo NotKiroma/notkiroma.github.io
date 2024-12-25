@@ -1,0 +1,65 @@
+html, body{
+    background-color: #4a4a4a;
+    margin: 0;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+}
+form{
+    border-radius: 20px;
+    padding: 30px 15px 15px 15px;
+    background-color: #383737;
+    margin: auto;
+    label{
+        display: block;
+        position: relative;
+        margin-bottom: 2rem;
+        &:has(:valid ~ type){
+            span{
+                top: -1.3rem;
+                left: 0;
+                color: white;
+            }
+        }
+        &:has(:focus){
+            span{
+                top: -1.3rem;
+                left: 0;
+                color: white;
+            }
+        }
+        span{
+            display: block;
+            position: absolute;
+            left: .5rem;
+            top: .3rem;
+            cursor: text;
+            transition: all .2s;
+        }
+        input{
+            border-radius: 5px;
+            padding: 5px;
+            border: 1px solid coral;
+        }
+    }
+    button{
+        border-radius: 10px;
+        font-size: 15px;
+        color: coral;
+        border: none;
+        background-color: #4a4a4a;
+        width: 100%;
+        height: 30px;
+        transition: all 0.1s ease;
+        opacity: .8;
+        &:hover{
+            transform: scale(1.01);
+            opacity: 1;
+        }
+        &:active{
+            transform: scale(.9);
+        }
+    }
+}
+
