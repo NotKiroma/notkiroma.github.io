@@ -8,26 +8,20 @@ body{
 }
 form{
     border-radius: 20px;
-    padding: 30px 15px 15px 15px;
+    padding: 35px 15px 15px 15px;
     background-color: #383737;
     margin: auto;
     label{
         display: block;
         position: relative;
         margin-bottom: 2rem;
-        &:has(:valid ~ type){
-            span{
-                top: -1.3rem;
-                left: 0;
-                color: white;
-            }
+        &:has(:focus) span{
+            top: -1.3rem;
+            left: 0;
+            color: white;
         }
-        &:has(:focus){
-            span{
-                top: -1.3rem;
-                left: 0;
-                color: white;
-            }
+        &:has(:valid) input{
+            background-color: red;
         }
         span{
             display: block;

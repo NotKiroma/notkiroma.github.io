@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #383737;
+    margin-left: 20px;
+    perspective: 1000px;
+    overflow-x: hidden;
+}
+
+#terraria{
+    width: 300px;
+    margin: 0px;
+}
+#text{
+    font-size: 25px;
+    width: 1000px;
+}
+
+h1, h2, p{
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+ol{
+    border-radius: 15px;
+    padding: 10px 0px 10px 35px;
+    background-color: rgb(37, 36, 36);
+    width: 230px;
+    position: sticky;
+    top: 15px;
+}
+
+ol li a{
+    color: coral;
+    text-decoration: none;
+    transition: all 0.5s;
+    display: block;
+    transform-origin: 0 50%;
+    &:hover{
+        text-decoration: underline;
+        transform: translateX(10px);
+    }
+    &:active{
+        transform: scale(0.9) translateX(20px);
+    }
+}
+
+div img{
+    transition: all 0.5s;
+    transform-origin: 0 50%;
+}
+
+#gameplay{
+    color: #f5a68d;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.Gameplay{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    p{
+        font-size: 20px;
+        width: 550px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+    img{
+        height: 260px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+#development{
+    color: #f5a68d;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.Development{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    p{
+        font-size: 20px;
+        width: 700px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+    img{
+        height: 390px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+#reception{
+    color: #f5a68d;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.Reception{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    p{
+        font-size: 20px;
+        width: 700px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: rotateX(-45deg) translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg) translateY(0px);
+    }
+}
+div{
+    animation: show 1s forwards;
+}
