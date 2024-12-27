@@ -20,8 +20,10 @@ form{
             left: 0;
             color: white;
         }
-        &:has(:valid) input{
-            background-color: red;
+        &:has(:valid) span{
+            top: -1.3rem;
+            left: 0;
+            color: white;
         }
         span{
             display: block;

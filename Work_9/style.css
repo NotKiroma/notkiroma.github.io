@@ -3,6 +3,9 @@
 .menu{
     display: none;
 }
+.menu_bu{
+    display: none;
+}
 
 body{
     margin: 0;
