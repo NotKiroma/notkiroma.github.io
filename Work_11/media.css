@@ -80,7 +80,7 @@
         border-radius: 0 0 0 15px;
         background-color: #333232;
     }
-    header:hover #menu a{
+    header.open #menu a{
         display: block;
         text-align: end;
         color: white;
