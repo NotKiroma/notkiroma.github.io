@@ -59,9 +59,7 @@ elem("#eql").addEventListener("click", function () {
             result = parseInt(last_number) / parseInt(input.value);
         }break;
         case "pow": {
-            let number = parseInt(last_number);
-            let pow = parseInt(input.value);
-            result = Math.pow(number, pow);
+            result = Math.pow(last_number, input.value);
         }break;
     }
     input.value = result;
