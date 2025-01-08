@@ -1,0 +1,12 @@
+.top{
+    bottom: auto;
+    top: 1rem;
+}
+.bottom{
+    bottom: 1rem;
+    top: auto;
+}
+.center{
+    top: 0;
+    bottom: 0;
+}
