@@ -11,6 +11,9 @@ let input = elem("input"),
 
 elems(".number").forEach(button => {
     button.addEventListener("click", function () {
+        if(isNaN(input.value)){
+            input.value = "";
+        }
         let number = this.innerText;
         input.value = input.value + number;
     });
@@ -41,25 +44,42 @@ elem("#pow").addEventListener("click", function() {
     input.value = "";
     operation = "pow"
 });
-
 elem("#eql").addEventListener("click", function () {
     if(last_number && operation){
         let result;
     switch(operation){
         case "add": {
-            result = parseInt(last_number) + parseInt(input.value);
+            if (isNaN(last_number) || isNaN(input.value))
+            { result = "Ошибка" }
+            else
+            { result = parseInt(last_number) + parseInt(input.value); }
         }break;
         case "sub": {
-            result = parseInt(last_number) - parseInt(input.value);
+            if (isNaN(last_number) || isNaN(input.value))
+            { result = "Ошибка" }
+            else
+            { result = parseInt(last_number) - parseInt(input.value); }
         }break;
         case "mul": {
-            result = parseInt(last_number) * parseInt(input.value);
+            if (isNaN(last_number) || isNaN(input.value))
+            { result = "Ошибка" }
+            else
+            { result = parseInt(last_number) * parseInt(input.value); }
         }break;
         case "div": {
-            result = parseInt(last_number) / parseInt(input.value);
+            if(input.value == 0){
+                result = "Деление на ноль"
+            }
+            else if (isNaN(last_number) || isNaN(input.value))
+            { result = "Ошибка" }
+            else
+            { result = parseInt(last_number) / parseInt(input.value); }
         }break;
         case "pow": {
-            result = Math.pow(last_number, input.value);
+            if (isNaN(last_number) || isNaN(input.value))
+            { result = "Ошибка" }
+            else
+            { result = Math.pow(last_number, input.value); }
         }break;
     }
     input.value = result;
@@ -70,11 +90,21 @@ elem("#eql").addEventListener("click", function () {
 
 elem("#sqr").addEventListener("click", function() {
     let number = parseInt(input.value);
-    input.value = Math.pow(number, 2);
+    if (isNaN(number)){
+        input.value = "Не число";
+    }else{
+        input.value = Math.pow(number, 2);
+    }
 });
 elem("#sqrt").addEventListener("click", function() {
     let number = parseInt(input.value);
-    input.value = Math.sqrt(number);
+    if (isNaN(number)){
+        input.value = "Не число";
+    }else if(number < 0){
+        input.value = "Ошибка"
+    }else{
+        input.value = Math.sqrt(number);
+    }
 });
 elem("#clr").addEventListener("click", function() {
     input.value = "";
