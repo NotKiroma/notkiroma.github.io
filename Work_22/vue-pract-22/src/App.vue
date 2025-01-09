@@ -5,9 +5,9 @@
 
   <main>
     <div class="info">
-    <h2>{{ name }}</h2>
-    <p v-if="info" v-html="info"></p>
-    <p v-else>Info is missing.</p>
+      <h2>{{ name }}</h2>
+      <p v-if="info" v-html="info"></p>
+      <p v-else>Info is missing.</p>
     </div>
     <div class="poster">
       <img v-if="poster" :src="poster" alt="" v-on:click="poster_view">
@@ -71,21 +71,22 @@ export default {
   computed: {
     tracks_search() {
       return this.tracks.filter(track =>
-      track.name.toLowerCase().includes(this.search.toLowerCase()))
+        track.name.toLowerCase().includes(this.search.toLowerCase()))
     }
   }
 }
 </script>
 <style scoped>
 @keyframes show {
-  from{
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
-dialog{
+
+dialog {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -98,43 +99,51 @@ dialog{
   background: transparent;
   border: none;
   backdrop-filter: blur(10px);
-  img{
+
+  img {
     max-width: 90%;
     max-height: 90%;
   }
-  &[open]{
+
+  &[open] {
     display: flex;
-    animation: show .5s forwards ;
+    animation: show .5s forwards;
   }
 }
-main{
+
+main {
   display: grid;
   grid-template-columns: min-content min-content;
   justify-content: center;
   align-items: start;
   gap: 2rem;
-  .poster{
+
+  .poster {
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0 0 5px 5px var(--text_lighter);
     background: var(--text_light);
-    img{
+
+    img {
       max-width: 500px;
       max-height: 500px;
       display: block;
     }
-    p{
+
+    p {
       padding: 1rem;
       text-align: center;
       font-size: 2rem;
     }
   }
+
   .playlist {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    .search{
-      input{
+
+    .search {
+      input {
         background: var(--bg_dark);
         border: 1px solid var(--text_light);
         color: var(--text_light);
@@ -144,7 +153,8 @@ main{
         box-sizing: border-box;
       }
     }
-    .track{
+
+    .track {
       display: flex;
       gap: 1rem;
       align-items: center;
@@ -152,13 +162,16 @@ main{
       min-width: 500px;
     }
   }
-  .info{
+
+  .info {
     grid-column: span 2;
-    h2{
+
+    h2 {
       font-size: 2rem;
       color: var(--text_lighter);
     }
-    p{
+
+    p {
       font-size: 1rem;
       color: var(--text_light);
     }
