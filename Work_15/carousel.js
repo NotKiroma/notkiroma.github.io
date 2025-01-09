@@ -2,7 +2,6 @@ class carousel {
     constructor(photos) {
         this.index = 0;
         this.photos = photos;
-
     }
 
     next_photo(){
