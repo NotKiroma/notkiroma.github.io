@@ -18,11 +18,7 @@
         <input type="text" v-model="search" placeholder="Search..." />
       </div>
       <div class="track" v-for="track in tracks_search" :key="track.id">
-        <p>{{ track.name }}</p>
-        <audio :src="track" controls></audio>
-        <button @click="like(track.id)" :class="this.tracks[track.id].like ? 'like' : ''">
-          <img :src="this.tracks[track.id].like? heart_filled : heart" alt="">
-        </button>
+        <Audio_track :track="track" @like_emit="like"/>
       </div>
     </div>
   </main>
@@ -32,11 +28,10 @@
 </template>
 <script>
 import poster from "@/assets/poster.jpg";
-import heart from "@/assets/heart.png"
-import heart_filled from "@/assets/heart_filled.png"
-let tracks = import.meta.glob("@/assets/kish/*.m4a");
-let tracks_names = Object.entries(tracks);
-tracks_names = tracks_names.map((el, index) => {
+let tracks = import.meta.glob("@/assets/tracks/*.m4a");
+let track_names = Object.entries(tracks);
+
+track_names = track_names.map((el, index) => {
   return {
     src: el[0],
     like: false,
@@ -45,13 +40,15 @@ tracks_names = tracks_names.map((el, index) => {
   }
 });
 
+import Audio_track from "@/components/Audio_track.vue";
 export default {
+  components: {
+    Audio_track
+  },
   data() {
     return {
       poster: poster,
-      tracks: tracks_names,
-      heart: heart,
-      heart_filled: heart_filled,
+      tracks: track_names,
       name: "Король И Шут - Акустический Альбом (1998)",
       info: `Группа: Король И Шут<br/>
           Альбом: Акустический Альбом<br/>
@@ -73,7 +70,8 @@ export default {
   },
   computed: {
     tracks_search() {
-      return this.tracks.filter(track => track.name.includes(this.search))
+      return this.tracks.filter(track =>
+      track.name.toLowerCase().includes(this.search.toLowerCase()))
     }
   }
 }
@@ -152,30 +150,6 @@ main{
       align-items: center;
       flex-wrap: wrap;
       min-width: 500px;
-      p{
-        color: var(--text_light);
-        flex-basis: 100%;
-      }
-      audio{
-        flex: 1;
-      }
-      button{
-        background: var(--text_light);
-        border-radius: 0.5rem;
-        border: 1px solid var(--text_lighter);
-        width: 3rem;
-        height: 3rem;
-        cursor: pointer;
-        transition: all .5s;
-        &.like{
-          background: pink;
-        }
-        img{
-          max-width: 100%;
-          max-height: 100%;
-          display: block;
-        }
-      }
     }
   }
   .info{
