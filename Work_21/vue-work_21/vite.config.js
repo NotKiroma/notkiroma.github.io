@@ -7,9 +7,20 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        transformAssetUrls: {
+          video: ['src', 'poster'],
+          audio: ['src'],
+          source: ['src'],
+          img: ['src'],
+          image: ['xlink:href', 'href'],
+          use: ['xlink:href', 'href']
+        }
+      }
+    }),
     vueDevTools({
-      launchEditor: 'webstorm'
+      launchEditor: 'webstorm',
     }),
   ],
   resolve: {
