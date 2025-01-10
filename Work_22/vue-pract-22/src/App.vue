@@ -18,7 +18,7 @@
         <input type="text" v-model="search" placeholder="Search..." />
       </div>
       <div class="track" v-for="track in tracks_search" :key="track.id">
-        <Audio_track :track="track" @like_emit="like"/>
+        <Audio_track :track="track"/>
       </div>
     </div>
   </main>
@@ -28,27 +28,21 @@
 </template>
 <script>
 import poster from "@/assets/poster.jpg";
-let tracks = import.meta.glob("@/assets/tracks/*.m4a");
-let track_names = Object.entries(tracks);
-
-track_names = track_names.map((el, index) => {
-  return {
-    src: el[0],
-    like: false,
-    name: el[0].split("/").at(-1),
-    id: index
-  }
-});
-
 import Audio_track from "@/components/Audio_track.vue";
+import { use_tracks_store } from "@/stores/track.js";
+
 export default {
+  setup() {
+    return{
+      tracks_store: use_tracks_store(),
+    }
+  },
   components: {
     Audio_track
   },
   data() {
     return {
       poster: poster,
-      tracks: track_names,
       name: "Король И Шут - Акустический Альбом (1998)",
       info: `Группа: Король И Шут<br/>
           Альбом: Акустический Альбом<br/>
@@ -56,21 +50,17 @@ export default {
           Стиль: Punk Rock<br/>
           Страна: Россия`,
       dialog_open: false,
-      search: "",
+      search: ""
     }
   },
   methods: {
     poster_view() {
       this.dialog_open = !this.dialog_open;
-    },
-    like(id) {
-      let index = this.tracks.findIndex(track => track.id === id);
-      this.tracks[index].like = !this.tracks[index].like;
     }
   },
   computed: {
     tracks_search() {
-      return this.tracks.filter(track =>
+      return this.tracks_store.tracks.filter(track =>
         track.name.toLowerCase().includes(this.search.toLowerCase()))
     }
   }
