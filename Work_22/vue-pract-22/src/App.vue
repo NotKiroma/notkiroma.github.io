@@ -5,12 +5,17 @@
 
   <main>
     <div class="info">
-      <h2>{{ name }}</h2>
-      <p v-if="info" v-html="info"></p>
+      <h2>{{ tracks_store.albums[tracks_store.current_album].name }}</h2>
+      <p v-if="tracks_store.albums[tracks_store.current_album].info"
+         v-html="tracks_store.albums[tracks_store.current_album].info"
+      ></p>
       <p v-else>Info is missing.</p>
     </div>
     <div class="poster">
-      <img v-if="poster" :src="poster" alt="" v-on:click="poster_view">
+      <img v-if="tracks_store.albums[tracks_store.current_album].poster"
+           :src="tracks_store.albums[tracks_store.current_album].poster" alt=""
+           v-on:click="poster_view"
+      >
       <p v-else>NO&nbsp;POSTER =(</p>
     </div>
     <div class="playlist">
@@ -23,11 +28,11 @@
     </div>
   </main>
   <dialog :open="!!dialog_open" @click="poster_view">
-    <img :src="poster" alt="">
+    <img :src="tracks_store.albums[tracks_store.current_album].poster" alt="">
   </dialog>
 </template>
+
 <script>
-import poster from "@/assets/poster.jpg";
 import Audio_track from "@/components/Audio_track.vue";
 import { use_tracks_store } from "@/stores/track.js";
 
@@ -37,18 +42,17 @@ export default {
       tracks_store: use_tracks_store(),
     }
   },
+  async mounted() {
+    await this.tracks_store.load_albums();
+    let album_id = this.tracks_store.albums[0].id;
+    await this.tracks_store.load_tracks(album_id);
+    this.tracks_store.change_current_album(album_id);
+  },
   components: {
     Audio_track
   },
   data() {
     return {
-      poster: poster,
-      name: "Король И Шут - Акустический Альбом (1998)",
-      info: `Группа: Король И Шут<br/>
-          Альбом: Акустический Альбом<br/>
-          Год: 1998<br/>
-          Стиль: Punk Rock<br/>
-          Страна: Россия`,
       dialog_open: false,
       search: ""
     }
@@ -60,8 +64,12 @@ export default {
   },
   computed: {
     tracks_search() {
-      return this.tracks_store.tracks.filter(track =>
-        track.name.toLowerCase().includes(this.search.toLowerCase()))
+      if (this.tracks_store.tracks) {
+        return this.tracks_store.tracks.filter(
+          track => track.name.toLowerCase().includes(this.search.toLowerCase())
+        )
+      }
+      return [];
     }
   }
 }

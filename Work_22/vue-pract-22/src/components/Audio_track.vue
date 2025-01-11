@@ -9,11 +9,10 @@
 </template>
 
 <script>
-let tracks = import.meta.glob("@/assets/tracks/*.m4a");
-let track_names = Object.entries(tracks);
-import heart from "@/assets/heart.png"
-import heart_filled from "@/assets/heart_filled.png"
+import heart from "@/assets/heart.png";
+import heart_filled from "@/assets/heart_filled.png";
 import { use_tracks_store } from "@/stores/track.js";
+import {mapActions} from "pinia";
 
 export default {
   setup(){
@@ -29,19 +28,7 @@ export default {
     }
   },
   methods: {
-    like(id){
-      let index = this.tracks_store.tracks.findIndex(track => track.id === id);
-      this.tracks_store.tracks[index].like = !this.tracks_store.tracks[index].like;
-    },
-    track_ended(id){
-      let index = this.tracks_store.tracks.findIndex(track => track.id === id);
-      if (index === track_names.length - 1)
-      { index = -1 }
-      this.tracks_store.current_track = this.tracks_store.tracks[index + 1].id;
-    },
-    play_started(id){
-      this.tracks_store.current_track = id;
-    }
+    ...mapActions(use_tracks_store, ["like", "track_ended", "play_started"]),
   },
   data() {
     return {
