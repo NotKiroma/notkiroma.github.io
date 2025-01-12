@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="./icon/asus_icon.ico">
+  <link rel="icon" href="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Магазин ноутбуков | Bobr</title>
+  <title>Онлайн магазин виски | Bobr</title>
   <link rel="stylesheet" href="./src/style/style.css">
 </head>
 <body>
@@ -14,13 +14,13 @@
 
 <header id="top_menu">
   <div id="menu">
-    <button>МЕНЮ</button>
+    <a>МЕНЮ</a>
   </div>
   <div id="logo">
-    <button><h1>BOBR</h1></button>
+    <a href="main.html" data-hash="main"><h1>BOBR</h1></a>
   </div>
   <div id="basket">
-    <button>КОРЗИНА [ 0 ]</button>
+    <a>КОРЗИНА [ 0 ]</a>
   </div>
 </header>
 
@@ -32,13 +32,13 @@
     <button><img src="./src/x-button.png" alt=""></button>
   </div>
   <div id="div_logo">
-    <button><h1>BOBR</h1></button>
+    <a href="main.html" data-hash="main"><h1>BOBR</h1></a>
   </div>
   <div id="div_text">
-    <button>КАТАЛОГ</button>
-    <button>ВИСКИ</button>
-    <button>О НАС</button>
-    <button>КОНТАКТЫ</button>
+    <a href="catalog.html" data-hash="catalog" >КАТАЛОГ</a>
+    <a href="whisky.html" data-hash="whisky" >ВИСКИ</a>
+    <a href="about.html" data-hash="about" >О НАС</a>
+    <a href="contact.html" data-hash="contact" >КОНТАКТЫ</a>
   </div>
 </nav>
 <nav id="menu_right">
@@ -47,7 +47,13 @@
   </div>
 </nav>
 
+<div id="container">
 
-<script src="./src/script/script.js"></script>
+</div>
+
+
+<script src="src/script/script_html.js"></script>
+<script src="src/script/script_basket.js"></script>
+<script src="src/script/fetch.js"></script>
 </body>
 </html>
