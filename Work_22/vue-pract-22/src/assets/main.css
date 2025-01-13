@@ -11,4 +11,5 @@ html, body {
   background: var(--bg_dark);
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
+  overflow-x: hidden;
 }

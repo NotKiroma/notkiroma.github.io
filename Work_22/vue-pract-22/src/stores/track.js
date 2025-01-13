@@ -11,27 +11,31 @@ export const  use_tracks_store = defineStore("tracks", {
   },
   actions: {
     async load_albums() {
-      let response = await fetch(`${import.meta.env.VITE_API_HOST}/albums`, {
-        headers: {
-          Token: import.meta.env.VITE_NOT_SO_SECRET_TOKEN,
-        },
-        cache: "no-store"
-      });
-      response = await response.json();
-      if (!response.error) {
-        this.albums = response.data;
+      if (!this.albums || this.albums.length === 0) {
+        let response = await fetch(`${import.meta.env.VITE_API_HOST}/albums`, {
+          headers: {
+            Token: import.meta.env.VITE_NOT_SO_SECRET_TOKEN,
+          },
+          cache: "no-store"
+        });
+        response = await response.json();
+        if (!response.error) {
+          this.albums = response.data;
+        }
       }
     },
     async load_tracks(album_id) {
-      let response = await fetch(`${import.meta.env.VITE_API_HOST}/albums/${album_id}`, {
-        headers: {
-          Token: import.meta.env.VITE_NOT_SO_SECRET_TOKEN,
-        },
-        cache: "no-store"
-      });
-      response = await response.json();
       let index = this.albums.findIndex(album => album.id === album_id);
-      this.albums[index].tracks = response.data.tracks;
+      if (!this.albums[index].tracks) {
+        let response = await fetch(`${import.meta.env.VITE_API_HOST}/album/${album_id}`, {
+          headers: {
+            Token: import.meta.env.VITE_NOT_SO_SECRET_TOKEN,
+          },
+          cache: "no-store"
+        });
+        response = await response.json();
+        this.albums[index].tracks = response.data.tracks;
+      }
     },
     like(id){
       let index = this.tracks.findIndex(track => track.id === id);
