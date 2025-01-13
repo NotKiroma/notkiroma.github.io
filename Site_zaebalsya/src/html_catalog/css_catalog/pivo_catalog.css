@@ -1,0 +1,28 @@
+#pivo_catalog_container{
+    box-shadow: 0 0 10px 1px rgba(159, 159, 159, 0.48);
+    background-color: var(--menu-bg-color);
+    padding: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 4rem;
+}
+
+.pivo_position{
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 10px;
+    max-width: 200px;
+    min-width: 200px;
+    transition: all .5s;
+    &:hover{
+        transform: scale(1.05);
+    }
+    img{
+        max-width: 100%;
+    }
+    button{
+        
+    }
+}

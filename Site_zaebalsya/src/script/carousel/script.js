@@ -12,7 +12,5 @@ document.addEventListener("mainLoaded", () => {
         container_1.querySelector(".next").addEventListener("click", function () {
             carousel_obj_1.next_photo();
         });
-    } else {
-        console.error("Элемент #one не найден.");
     }
 });

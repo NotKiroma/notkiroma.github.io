@@ -19,7 +19,7 @@
         <input type="text" v-model="search" placeholder="Search..." />
       </div>
       <div class="track" v-for="track in tracks_search" :key="track.id">
-        <Audio_track :track="track"/>S
+        <Audio_track :track="track"/>
       </div>
     </div>
     <dialog :open="!!dialog_open" @click="poster_view">
@@ -81,7 +81,6 @@ export default {
     opacity: 1;
   }
 }
-
 dialog {
   position: fixed;
   width: 100%;
@@ -95,31 +94,26 @@ dialog {
   background: transparent;
   border: none;
   backdrop-filter: blur(10px);
-
   img {
     max-width: 90%;
     max-height: 90%;
   }
-
   &[open] {
     display: flex;
     animation: show .5s forwards;
   }
 }
-
 main {
   display: grid;
   grid-template-columns: min-content min-content;
   justify-content: center;
   align-items: start;
   gap: 2rem;
-
   .poster {
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0 0 5px 5px var(--text_lighter);
     background: var(--text_light);
-
     img {
       max-width: 500px;
       max-height: 500px;
@@ -132,12 +126,10 @@ main {
       font-size: 2rem;
     }
   }
-
   .playlist {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
     .search {
       input {
         background: var(--bg_dark);
@@ -145,20 +137,19 @@ main {
         color: var(--text_light);
         padding: 0.5rem 1rem;
         font-size: 1rem;
-        width: 100%;
+        min-width: 500px;
         box-sizing: border-box;
       }
     }
-
     .track {
       display: flex;
       gap: 1rem;
       align-items: center;
       flex-wrap: wrap;
       min-width: 500px;
+      max-width: 500px;
     }
   }
-
   .info {
     grid-column: span 2;
 
@@ -171,6 +162,24 @@ main {
       font-size: 1rem;
       color: var(--text_light);
     }
+  }
+}
+@media screen and (max-width: 700px) {
+  main {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    .poster img{
+      max-width: 100%;
+    }
+    .playlist {
+      min-width: 100%;
+    }
+    .info{
+      grid-column: 1;
+    }
+  }
+  .poster{
+    max-width: 380px;
   }
 }
 </style>

@@ -8,6 +8,20 @@ export const  use_tracks_store = defineStore("tracks", {
   }),
   getters: {
     tracks: state => state.albums[state.current_album]?.tracks ?? [],
+    liked_tracks: state => {
+      let found = [];
+      for (let album of state.albums) {
+        for (let track of album.tracks) {
+          if (track.like){
+            found.push({
+              album: album,
+              track: track,
+            });
+          }
+        }
+      }
+      return found
+    },
   },
   actions: {
     async load_albums() {
@@ -37,9 +51,15 @@ export const  use_tracks_store = defineStore("tracks", {
         this.albums[index].tracks = response.data.tracks;
       }
     },
-    like(id){
-      let index = this.tracks.findIndex(track => track.id === id);
-      this.tracks[index].like = !this.tracks[index].like;
+    like(track_id){
+      for (let album of this.albums) {
+        for (let track of album.tracks) {
+          if (track.id === track_id) {
+            track.like = !track.like;
+            return;
+          }
+        }
+      }
     },
     track_ended(id){
       let index = this.tracks.findIndex(track => track.id === id);

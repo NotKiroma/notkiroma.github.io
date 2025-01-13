@@ -8,6 +8,7 @@ const shadow = document.querySelector('#shadow');
 const shadow_low = document.querySelector('#shadow_low');
 
 const basket_button = document.querySelector('#basket a');
+const basket_img = document.querySelector('#basket img');
 const menu_right = document.querySelector('#menu_right');
 const right_img_div_close = document.querySelector('#right_img_div button');
 
@@ -50,6 +51,10 @@ right_img_div_close.addEventListener("click", function() {
   close_menu_right();
   remove_shadow_low();
 });
+basket_img.addEventListener( 'click', function () {
+  show_menu_right();
+  show_shadow_low();
+})
 basket_button.addEventListener('click', function () {
   show_menu_right();
   show_shadow_low();

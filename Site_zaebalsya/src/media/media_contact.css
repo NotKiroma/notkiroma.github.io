@@ -1,0 +1,34 @@
+@media screen and (max-width: 1270px) {
+    #container_contact{
+        width: 700px;
+        #info_contact{
+            flex-wrap: wrap;
+        }
+    }
+    #navigation{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #container_contact{
+        width: 400px;
+        #info_contact{
+            flex-wrap: wrap;
+        }
+    }
+    #navigation{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #container_contact{
+        width: 300px;
+        #info_contact{
+            flex-wrap: wrap;
+        }
+    }
+    #navigation{
+        width: 300px;
+    }
+}

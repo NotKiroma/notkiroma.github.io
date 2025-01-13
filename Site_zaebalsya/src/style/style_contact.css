@@ -1,26 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-#navigation_contact{
-    margin: 20px auto;
-    display: flex;
-    width: 1200px;
-    #glav_contact {
-        opacity: .5;
-        &:hover{
-            opacity: 1;
-        }
-    }
-    a{
-        text-decoration: none;
-        color: var(--color-text);
-    }
-    p{
-        cursor: default;
-        margin: 0 10px;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-}
 #container_contact {
+    margin-bottom: 40px;
     border-radius: 5px;
     padding: 20px;
     margin-left: auto;
@@ -77,7 +58,7 @@
             cursor: pointer;
             border: none;
             border-radius: 5px;
-            padding: 5px;
+            padding: 10px;
             background: var(--text-color);
             display: flex;
             justify-content: center;
@@ -96,6 +77,83 @@
             font-family: 'Roboto Condensed', sans-serif;
             color: var(--text-color);
             padding: 0;
+        }
+    }
+}
+#mapa_contact{
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    width: 100%;
+    iframe{
+        border-radius: 5px;
+        margin: 10px;
+        width: 100%;
+    }
+}
+#mail_contact{
+    font-family: 'Roboto Condensed', sans-serif;
+    div{
+        width: 100%;
+        border-bottom: 1px solid var(--text-color);
+        p{
+            margin: 1rem 0 .5rem 0;
+            width: 100%;
+        }
+    }
+    form{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        label{
+            margin: 1rem 0 1rem 0;
+            display: flex;
+            span{
+                opacity: .7;
+                margin: auto;
+                display: block;
+                width: 250px;
+            }
+            input{
+                border-radius: 5px;
+                background: none;
+                height: 20px;
+                width: 100%;
+                border: 1px solid rgba(71, 66, 66, 0.71);
+                outline: none;
+                &:focus{
+                    border-color: #bf2929;
+                    box-shadow: 0 0 2px #bf2929;
+                }
+                &:valid{
+                    border-color: #474242FF;
+                }
+            }
+            #text_vopros{
+                margin: 2.5px;
+            }
+            #vopros{
+                height: 150px;
+            }
+        }
+    }
+    #button_mail_contact{
+        border: none;
+        display: flex;
+        justify-content: flex-end;
+        button{
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            background: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            color: var(--menu-bg-color);
         }
     }
 }

@@ -1,6 +1,7 @@
 <template>
   <header>
     <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/liked">Liked</RouterLink>
   </header>
   <RouterView v-slot="{ Component }">
     <Transition name="slide-fade" mode="out-in">
@@ -38,6 +39,10 @@ header{
   a{
     color: var(--text_light);
     text-decoration: none;
+    transition: all .5s;
+    &.router-link-active{
+      color: #ff5e5e;
+    }
   }
 }
 .slide-fade-enter-active{

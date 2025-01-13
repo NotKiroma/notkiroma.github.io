@@ -1,0 +1,26 @@
+@media screen and (max-width: 1270px) {
+    #navigation{
+        width: 700px !important;
+    }
+}
+@media screen and (max-width: 770px) {
+    #basket{
+        padding: 0;
+        margin: 0;
+        a{
+            display: none;
+        }
+        img{
+            display: block !important;
+            height: 30px;
+        }
+    }
+    #navigation{
+        width: 400px !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    #navigation{
+        width: 300px !important;
+    }
+}

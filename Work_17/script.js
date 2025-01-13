@@ -1,6 +1,6 @@
 let links = document.querySelectorAll("header a"),
     aaaa = new Map();
-const hashs = ["main", "about", "photos"];
+const hashs = ["main", "about", "photos", "contact", "whisky", "catalog"];
 
 
 
@@ -14,6 +14,7 @@ links.forEach(link => {
         }else{
             let data = await fetch(href);
             let text = await data.text();
+            console.log(text);
             aaaa.set(href, text);
             document.querySelector("#container").innerHTML = text;
             window.location.hash = this.getAttribute("data-hash");

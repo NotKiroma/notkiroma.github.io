@@ -1,0 +1,15 @@
+@media screen and (max-width: 1450px) {
+    #pivo_catalog_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 1170px) {
+    #pivo_catalog_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 870px) {
+    #pivo_catalog_container{
+        grid-template-columns: 1fr;
+    }
+}

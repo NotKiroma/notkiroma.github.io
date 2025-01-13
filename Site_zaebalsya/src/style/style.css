@@ -17,6 +17,29 @@ html, body{
 #container{
     width: 100%;
 }
+#navigation{
+    margin: 20px auto;
+    display: flex;
+    width: 1200px;
+    #glav_contact {
+        opacity: .5;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: var(--color-text);
+    }
+    p{
+        cursor: default;
+        margin: 0 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+}
+#navigation.show{
+    display: none;
+}
 
 #top_menu{
     background: var(--menu-bg-color);
@@ -70,6 +93,9 @@ html, body{
             &:hover{
                 color: var(--black);
             }
+        }
+        img{
+            display: none;
         }
     }
 }
