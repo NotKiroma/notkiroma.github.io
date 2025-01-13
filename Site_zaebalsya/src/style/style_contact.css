@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+#navigation_contact{
+    margin: 20px auto;
+    display: flex;
+    width: 1200px;
+    #glav_contact {
+        opacity: .5;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: var(--color-text);
+    }
+    p{
+        cursor: default;
+        margin: 0 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+}
+#container_contact {
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background: var(--menu-bg-color);
+    box-shadow: 0 0 10px 1px rgba(159, 159, 159, 0.48);
+    #head_contact{
+        margin: 0;
+        padding: 0;
+        p{
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 2em;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+.name_contact{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    color: var(--text-color);
+}
+#info_contact{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    width: 100%;
+    #phone_contact{
+        margin: 10px;
+        width: 270px;
+        p{
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--text-color);
+            padding: 0;
+        }
+    }
+    #work_contact{
+        margin: 10px;
+        width: 270px;
+        p{
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--text-color);
+            padding: 0;
+        }
+    }
+    #name_contact{
+        margin: 10px;
+        width: 270px;
+        button{
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            background: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            img{
+                margin-right: 5px;
+                max-height: 100%;
+                max-width: 100%;
+            }
+            p{
+                color: var(--menu-bg-color);
+            }
+        }
+        p{
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--text-color);
+            padding: 0;
+        }
+    }
+}

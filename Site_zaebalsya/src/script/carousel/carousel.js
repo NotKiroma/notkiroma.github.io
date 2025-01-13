@@ -3,7 +3,6 @@ class carousel {
         this.index = 0;
         this.photos = photos;
     }
-
     next_photo(){
         this.photos.forEach(photos => {
             photos.classList.remove("show");

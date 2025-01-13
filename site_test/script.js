@@ -1,14 +1,13 @@
-// Получаем элементы
-const toggleMenuButton = document.getElementById('toggle-menu');
-const closeMenuButton = document.getElementById('close-menu');
-const sideMenu = document.getElementById('side-menu');
+let container_1 = document.querySelector("#one"),
+  photos_1 = container_1.querySelectorAll(".photo"),
+  carousel_obj_1 = new carousel(photos_1)
 
-// Открытие меню
-toggleMenuButton.addEventListener('click', () => {
-    sideMenu.classList.add('open');
+console.log("Получилось");
+
+
+container_1.querySelector(".prev").addEventListener("click", function() {
+    carousel_obj_1.prev_photo();
 });
-
-// Закрытие меню
-closeMenuButton.addEventListener('click', () => {
-    sideMenu.classList.remove('open');
+container_1.querySelector(".next").addEventListener("click", function() {
+    carousel_obj_1.next_photo();
 });
