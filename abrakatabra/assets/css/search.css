@@ -1,31 +1,25 @@
-main .inner_container{
-    padding-right: 200px;
-    box-sizing: border-box;
+html{
+    body{
+        display: flex;
+        flex-direction: column;
+        main{
+            flex: 1;
+        }
+    }
+}
+.post{
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #fff;
 }
 
-.trending{
-    position: fixed;
-    top: 4.5rem;
-    width: calc(200px - 1rem);
+form{
+    padding: 1rem;
+    margin: 1rem 0;
     background: #fff;
-    right: 0;
-    left: 1024px;
-    margin: auto;
-    transform: translateX(-50%);
-    > h2{
-        margin: 1rem 0;
-        font-size: 1.1rem;
-        text-align: center;
-    }
-    .post{
-        background: #fff;
-        padding: 0 1rem 1rem 1rem;
-        display: block;
-        h2{
-            padding-top: 0.5rem;
-            border-top: 1px solid rgba(60, 59, 59, 0.15);
-            font-size: 1.1rem;
-        }
+    input{
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -34,7 +28,7 @@ main .inner_container{
     padding: 1rem;
 }
 
-.posts .post{
+.results .post{
     margin: 1rem 0;
 }
 
@@ -53,7 +47,7 @@ main .inner_container{
     }
 }
 
-.posts .post > h2{
+.results .post > h2{
     font-weight: bold;
     margin-bottom: .7rem;
 }
@@ -103,5 +97,18 @@ main .inner_container{
         p{
             font-size: 1rem;
         }
+    }
+}
+
+.not_found{
+    p{
+        margin: 2rem 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+    img{
+        max-width: 10vw;
+        max-height: 50vh;
+        margin: auto;
     }
 }

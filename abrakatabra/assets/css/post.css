@@ -1,0 +1,89 @@
+.post{
+    margin: 1rem 0;
+    background: #fff;
+    padding: 1rem;
+    .post_stats {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+    .image{
+        margin-bottom: 1rem;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        img{
+            max-height: 45vh;
+            max-width: 100%;
+        }
+    }
+    > h2{
+        font-weight: bold;
+        margin-bottom: .7rem;
+    }
+    .post_info{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        .username{
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .date{
+            font-size: .9rem;
+            opacity: .7;
+        }
+    }
+    .tags{
+        margin-top: 1rem;
+        a{
+            color: #548eaa;
+            transition: border-bottom-color .2s;
+            border-bottom: 1px solid transparent;
+            &:hover{
+                border-bottom-color: #548eaa;
+            }
+        }
+    }
+}
+.comments{
+    margin: 1rem 0;
+    background: #fff;
+    padding: 1rem;
+    h2{
+        margin-bottom: 2rem;
+    }
+    .comment{
+        .comment_info{
+            display: flex;
+            align-items: flex-end;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            .username{
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+            .date{
+                font-size: .9rem;
+                opacity: .7;
+            }
+        }
+    }
+    .comment:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
