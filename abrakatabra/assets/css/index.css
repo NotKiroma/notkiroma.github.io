@@ -1,0 +1,42 @@
+.post{
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.post .post_info{
+    gap: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    .username{
+        font-weight: bold;
+    }
+}
+
+.post > h2{
+    margin-bottom: 2rem;
+}
+
+.post .cover img{
+    max-width: 100%;
+}
+
+.post .cover{
+    margin-bottom: 1rem;
+}
+.post a{
+    transition: all .5s;
+    border-radius: .25rem;
+    margin: 1rem 0;
+    color: #548eaa;
+    border: 1px solid #548eaa;
+    padding: .5rem 1rem;
+    display: inline-block;
+    &:hover{
+        background: #548eaa;
+        color: #fff;
+    }
+}
+
+.post .preview{
+    text-align: justify;
+}
