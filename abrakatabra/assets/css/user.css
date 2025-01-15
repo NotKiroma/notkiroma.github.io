@@ -67,3 +67,19 @@ html{
         }
     }
 }
+
+@media screen and (max-width: 670px){
+    main{
+        .inner_container{
+            > div{
+                width: 90% !important;
+            }
+        }
+    }
+    .switch{
+        flex-direction: column !important;
+        p{
+            text-align: center !important;
+        }
+    }
+}

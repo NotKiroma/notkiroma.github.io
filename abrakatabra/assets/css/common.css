@@ -82,6 +82,10 @@ header .icons{
     }
 }
 
+header #toggle_menu{
+    display: none;
+}
+
 footer{
     background: #1d2023;
     position: relative;
@@ -113,5 +117,67 @@ input{
     border: 1px solid #c1c1c1;
     &:focus{
         border-color: #548eaa;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    header > .inner_container, footer > .inner_container, main > .inner_container{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    footer > .inner_container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        div{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        div:not(:last-child){
+            margin-bottom: .5rem;
+        }
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgb(0 0 0 / 15%);
+        display: none;
+
+    }
+    nav.active{
+        display: block;
+    }
+    header nav ul {
+        flex-direction: column;
+        background: #fff;
+        padding: 1rem;
+        height: 100%;
+        box-sizing: border-box;
+        width: 50%;
+        position: relative;
+    }
+    @keyframes ul_show {
+        from{
+            left: -50%;
+        }
+        to{
+            left: 0;
+        }
+    }
+    header nav.active ul{
+        animation: ul_show .5s forwards;
+    }
+    header #toggle_menu{
+        padding: 0;
+        display: block;
+        background: none;
+        img{
+            width: 1.9rem;
+            height: 1.9rem;
+        }
     }
 }

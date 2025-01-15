@@ -105,3 +105,30 @@ main .inner_container{
         }
     }
 }
+
+@media screen and (max-width: 670px){
+    main .inner_container{
+        padding-right: 0;
+        .posts{
+            .post{
+                .cover{
+                    display: none;
+                }
+                .preview{
+                    display: none;
+                }
+                > h2{
+                    margin-bottom: 1rem;
+                }
+                a{
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .post .post_stats{
+        display: inline-flex;
+        margin-left: 1rem;
+    }
+}

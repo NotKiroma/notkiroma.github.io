@@ -87,3 +87,12 @@
         margin-bottom: 3rem;
     }
 }
+
+@media screen and (max-width: 670px) {
+    .tags{
+        a{
+            display: inline-block;
+            margin: 0 .5rem .6rem 0;
+        }
+    }
+}
